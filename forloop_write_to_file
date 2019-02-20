@@ -1,0 +1,31 @@
+def main():
+    # get the names
+
+    filecontent = open('testery.txt', 'w')
+
+    looptimes = int(input("How many lines? "))
+    for i in range(looptimes):
+        name = input("The name? ")
+        filecontent.write(name + '\n')
+
+    filecontent.close()
+
+    printjunk = open('testery.txt', 'r')
+
+    printjunk.read()
+
+    print(printjunk)
+
+    printjunk.close()
+
+main()
+
+# EXAMPLE
+# How many lines? 5
+# The name? Dickless Malone
+# The name? Cocksmith Jackson
+# The name? Ballsy Testickles
+# The name? Nutty Sachs
+# The name? Penis
+#
+# Errored, but file was successfully created, with proper linebreaks and all
