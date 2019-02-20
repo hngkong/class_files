@@ -1,0 +1,19 @@
+def main():
+    int total = 0
+
+    addfiles = open('math.txt', 'w')
+    repeat = input("How many numbers? ")
+    for x in range(repeat):
+        number = input("Number? ")
+        addfiles.write(number + "\n")
+
+    addfiles.close()
+
+    readfile = open('math.txt', 'r')
+    for i in range(repeat):
+        numadd = (int)readfile.readline()
+        total += numadd
+
+    print(total)
+    
+main()
