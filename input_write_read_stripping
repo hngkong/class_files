@@ -27,6 +27,9 @@ def main():
     myfile.write(name1 + '\n')
     myfile.write(name2 + '\n')
     myfile.write(name3 + '\n')
+    
+    # must convert a number to a string to write it
+    myfile.write(str(5) + '\n')
 
     # close file
     myfile.close()
@@ -46,5 +49,19 @@ def main():
 
     # close the file, move your car?
     printfile.close()
+    
+    # to strip the newline (\n)
+    line1 = line1.rstrip('\n')
+    # interestingly, will not strip 'e\n', even if the line is something like "fuckere\n"
 
 main()
+
+# EXAMPLE RUN
+#
+# Enter the names of your friends:
+# Friend 1: Butts Lmao
+# Friend 2: Johnny Rico, who loved his parents so
+# Friend 3: Slitty Wristman
+# Butts Lmao
+# Johnny Rico, who loved his parents so
+# Slitty Wristman
