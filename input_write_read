@@ -1,0 +1,50 @@
+# *********************************************************************************************************
+# Class: IT-512 Spring 2019
+# Author: Charles Kline
+# Due Date:
+# Software/Program Reference Number: Class Discussion 3ish
+# Software/Program Brief Description: Write a hot goddamn mess of a program
+#                                     that fucks with files.
+#
+#
+# Ver No.    Name(Initials)  Date           Description
+# =======    ==============  ===========    ===========
+# 1.0        CK              2019/??/??     First Version
+# *********************************************************************************************************
+# Variable Initialization
+
+def main():
+    # get the names
+    print("Enter the names of your friends:")
+    name1 = input("Friend 1: ")
+    name2 = input("Friend 2: ")
+    name3 = input("Friend 3: ")
+
+    # open/create file named friends.txt
+    myfile = open('friends.txt', 'w')
+
+    # write the data to the file
+    myfile.write(name1 + '\n')
+    myfile.write(name2 + '\n')
+    myfile.write(name3 + '\n')
+
+    # close file
+    myfile.close()
+
+    # open file again
+    printfile = open('friends.txt', 'r')
+
+    # get data, lol
+    line1 = printfile.readline()
+    line2 = printfile.readline()
+    line3 = printfile.readline()
+
+    # print data
+    print(line1)
+    print(line2)
+    print(line3)
+
+    # close the file, move your car?
+    printfile.close()
+
+main()
