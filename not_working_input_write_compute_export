@@ -1,0 +1,37 @@
+//BUSTED AS FUCK - Why?
+
+# *********************************************************************************************************
+# Class: IT-512 Spring 2019
+# Author: Charles Kline
+# Due Date:
+# Software/Program Reference Number: Class Discussion 3ish
+# Software/Program Brief Description: Write a hot goddamn mess of a program
+#                                     that fucks with files.
+#
+#
+# Ver No.    Name(Initials)  Date           Description
+# =======    ==============  ===========    ===========
+# 1.0        CK              2019/??/??     First Version
+# *********************************************************************************************************
+# Variable Initialization
+
+
+def main():
+    total = 0
+
+    addfiles = open('math.txt', 'w')
+    repeat = input("How many numbers? ")
+    for x in range(repeat):
+        number = input("Number? ")
+        addfiles.write(number + "\n")
+
+    addfiles.close()
+
+    readfile = open('math.txt', 'r')
+    for i in range(repeat):
+        numadd = (int)readfile.readline()
+        total += numadd
+
+    print(total)
+
+main()
