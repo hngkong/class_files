@@ -1,0 +1,20 @@
+Clock class contains
+
+Attributes:
+  Second
+  Minute
+  Hour
+  Alarm Second
+  Alarm Minute
+  Alarm Hour
+  Alarm On
+  
+Private Methods:
+  Advance Second
+  Advance Minute
+  Advance Hour
+  Check Alarm
+  
+Public Methods:
+  Set Time
+  Set Alarm
