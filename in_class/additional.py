@@ -16,16 +16,16 @@ def main():
     myobj1 = MyClass()
     myobj2 = MyClass()
 
-    # Print the values of myVar for both objects
-    print(myobj1.myVar)
-    print(myobj2.myVar)
-
+    # Print the default values of myVar for both objects
+    print("attribute within myobj1", myobj1.myVar)
+    print("attribute within myobj2", myobj2.myVar)
+    
     # Change the values of myVar for both objects
     myobj1.myVar = "Passed"
     myobj2.myVar = "Failed"
 
     # Print the values of myVar for both objects again
-    print(myobj1.myVar)
-    print(myobj2.myVar)
+    print("attribute within myobj1", myobj1.myVar)
+    print("attribute within myobj2", myobj2.myVar)
 
 main()
