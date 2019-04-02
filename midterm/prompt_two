@@ -1,0 +1,9 @@
+Problem statement
+*   Write a program that asks the user to input radius of a circle. The program then passes this value to two functions:
+*   find_area() and find_circumference()
+*   These functions return circle’s area and circumference respectively. Program then passes the values of area and 
+      circumference to prin_data() that prints the following statement: The 
+      area of the circle is AAAAA and the circumference is CCCCCC
+*   Use the radius value “r” as 5, 9, 21 and the following formulas:
+*   Area of circle =
+*   Circumference of the circle =
