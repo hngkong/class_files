@@ -29,4 +29,8 @@ def main():
 
     example.myOps()
 
+    example.myVar = "Fuck it."
+
+    example.myOps()
+
 main()
