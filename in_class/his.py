@@ -1,6 +1,6 @@
 # Define a class MyClass with one attribute myVar, and one method myOps.  This method
 # simply prints "This is the method myOps".  Display the value of the attribute myVar.
-
+# Then change the value of the attribute to "Passed"
 # *********************************************************************************************************
 # Class: IT-512 Spring 2019
 # Author: Charles Kline
@@ -29,7 +29,7 @@ def main():
 
     example.myOps()
 
-    example.myVar = "Fuck it."
+    example.myVar = "Passed"
 
     example.myOps()
 
