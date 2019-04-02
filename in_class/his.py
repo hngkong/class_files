@@ -31,13 +31,13 @@ def main():
     # print the default value of the attribute myVar
     print(example.myVar)
 
-    # call the method myOps() of the class MyClass() 
-    example.myOps()
-
     # assign a new value to myVar
     example.myVar = "Passed"
 
     # print the updated value of myVar
     print(example.myVar)
+
+    # call the method myOps() of the class MyClass() 
+    example.myOps()
 
 main()
