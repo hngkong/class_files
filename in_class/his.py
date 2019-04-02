@@ -22,7 +22,6 @@ class MyClass:
     # define myOps()
     def myOps(self):
         print("This is the method myOps")
-        print(self.myVar)
 
 def main():
 
@@ -30,6 +29,7 @@ def main():
     example = MyClass()
 
     # print the default value of the attribute myVar
+    print(example.myVar)
 
     # call the method myOps() of the class MyClass() 
     example.myOps()
