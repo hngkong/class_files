@@ -9,6 +9,9 @@ class MyClass():
 
     myVar = "Example"
 
+    def myOps(self):
+        # placeholder
+
 def main():
 
     myobj1 = MyClass()
