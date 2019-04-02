@@ -11,6 +11,7 @@ class MyClass():
 
     def myOps(self):
         # placeholder
+        print("Placeholder")
 
 def main():
 
