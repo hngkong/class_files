@@ -31,6 +31,6 @@ def main():
 
     example.myVar = "Passed"
 
-    example.myOps()
+    print(example.myVar)
 
 main()
