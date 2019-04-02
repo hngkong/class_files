@@ -4,13 +4,13 @@
 # *********************************************************************************************************
 # Class: IT-512 Spring 2019
 # Author: Charles Kline
-# Due Date: 3/12/2019
+# Due Date: None, in class work
 # Software/Program Reference Number: Objects Class
-# Software/Program Brief Description: Objects/Classes
+# Software/Program Brief Description: Objects/Classes practice
 #
 # Ver No.    Name(Initials)  Date           Description
 # =======    ==============  ===========    ===========
-# 1.0        CK              2019/26/03     First Version
+# 1.0        CK              2019/02/04     First Version
 # *********************************************************************************************************
 # Variable Initialization
 
@@ -25,12 +25,19 @@ class MyClass:
         print(self.myVar)
 
 def main():
+
+    # instantiate an object of MyClass()
     example = MyClass()
 
+    # print the default value of the attribute myVar
+
+    # call the method myOps() of the class MyClass() 
     example.myOps()
 
+    # assign a new value to myVar
     example.myVar = "Passed"
 
+    # print the updated value of myVar
     print(example.myVar)
 
 main()
