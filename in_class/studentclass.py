@@ -19,23 +19,26 @@
 class MyStudent():
     
     # create object variables
-    fname = "John"
-    lname = "Doe"
+    fname = ""
+    lname = ""
     type = "Grad"
     semesterAttended = 1
-    finishedString = "Nothing"
+    dataStr = ""
 
     # create object methods
     def studentData(self):
-        finishedString = fname + lname + str(type) + semesterAttended
-        print(finishedString)
+        dataStr = "%s %s is a %s student and he/she has completed %s semesters." % (self.fname, self.lname, self.type, self.semesterAttended)
+        print(dataStr)
 
 
 def main():
 
     # instantiate the student object
     person = MyStudent()
+    person.fname = "John"
+    person.lname = "Doe"
 
+    print("Student's first name is", person.fname)
     # do stuff?
     person.studentData()
 
