@@ -35,10 +35,17 @@ def main():
 
     # instantiate the student object
     person = MyStudent()
+
+    # print default values
+    person.studentData()
+
+    print("The student's first name is", person.fname, "\nThe student's last name is", person.lname)
+    
     person.fname = "John"
     person.lname = "Doe"
 
-    print("Student's first name is", person.fname)
+    print("The student's first name is", person.fname, "\nThe student's last name is", person.lname)
+        
     # do stuff?
     person.studentData()
 
