@@ -2,7 +2,7 @@
 # Class: IT-512 Spring 2019
 # Author: Charles Kline
 # Due Date: None, in class work
-# Software/Program Reference Number: Objects Class
+# Software/Program Reference Number: Student Objects
 # Software/Program Brief Description: Create a student class object
 #
 # Ver No.    Name(Initials)  Date           Description
