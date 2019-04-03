@@ -1,3 +1,8 @@
+# Define a class MyStudent with attributes:
+# fname, lname, type = "Grad", semesterAttended = 1
+# There is one method - studentData() - that will combine the
+# values of attributes into a string.
+
 # *********************************************************************************************************
 # Class: IT-512 Spring 2019
 # Author: Charles Kline
@@ -11,22 +16,27 @@
 # *********************************************************************************************************
 # Variable Initialization
 
-class Student():
+class MyStudent():
     
     # create object variables
-    name = "John Doe"
+    fname = "John"
+    lname = "Doe"
+    type = "Grad"
+    semesterAttended = 1
+    finishedString = "Nothing"
 
     # create object methods
-    def example(self):
-        print("example")
+    def studentData(self):
+        finishedString = fname + lname + str(type) + semesterAttended
+        print(finishedString)
 
 
 def main():
 
     # instantiate the student object
-    person = Student()
+    person = MyStudent()
 
     # do stuff?
-    person.example()
+    person.studentData()
 
 main()
