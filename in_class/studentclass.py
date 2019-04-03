@@ -37,16 +37,15 @@ def main():
     person = MyStudent()
 
     # print default values
-    person.studentData()
-
     print("DEFAULT VALUES\nThe student's first name is", person.fname, "\nThe student's last name is", person.lname, "\n")
     
     person.fname = "John"
     person.lname = "Doe"
 
+    # print updated values
     print("UPDATED VALUES\nThe student's first name is", person.fname, "\nThe student's last name is", person.lname, "\n")
 
-    # do stuff?
+    # print the string using %s placeholders with a tuple
     person.studentData()
 
 main()
