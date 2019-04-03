@@ -37,7 +37,7 @@ def main():
     person = MyStudent()
 
     # print default values
-    print("DEFAULT VALUES\nThe student's first name is", person.fname, "\nThe student's last name is", person.lname, "\n")
+    print("\nDEFAULT VALUES\nThe student's first name is", person.fname, "\nThe student's last name is", person.lname, "\n")
     
     person.fname = "John"
     person.lname = "Doe"
