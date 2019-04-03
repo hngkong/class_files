@@ -39,13 +39,13 @@ def main():
     # print default values
     person.studentData()
 
-    print("The student's first name is", person.fname, "\nThe student's last name is", person.lname)
+    print("DEFAULT VALUES\nThe student's first name is", person.fname, "\nThe student's last name is", person.lname, "\n")
     
     person.fname = "John"
     person.lname = "Doe"
 
-    print("The student's first name is", person.fname, "\nThe student's last name is", person.lname)
-        
+    print("UPDATED VALUES\nThe student's first name is", person.fname, "\nThe student's last name is", person.lname, "\n")
+
     # do stuff?
     person.studentData()
 
