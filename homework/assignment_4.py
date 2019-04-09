@@ -24,10 +24,7 @@ def main():
 
     # 2. Load the file
     with open(file_name) as fp:
-        data = fp.readline()
-        while data:
-            data = fp.readline()
-            line_num = line_num + 1
+        for line_num, data in enumerate(fp):
             # 3. Display the contents of the file
             print("Line {}: {}".format(line_num, data))
             data_total = data_total + data
@@ -39,3 +36,4 @@ def main():
     data_average = data_total/line_num
     print("The average of the data is:", data_average)
     
+main()
