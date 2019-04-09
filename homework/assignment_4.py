@@ -24,7 +24,7 @@ def main():
 
     # 2. Load the file
     with open(str(file_name), 'r') as fp:
-        for line_num, data in enumerate(fp):
+        for line_num, data in fp:
             # 3. Display the contents of the file
             print("Line {}: {}".format(line_num, data))
             data_total = data_total + data
