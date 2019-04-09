@@ -1,0 +1,10 @@
+HW-4
+Due: 04/09/2019
+
+Write a program that asks the user for the name of the input file. The program should display the contents of the file with each line preceded with a line number followed by a colon. The line numbering should start at 1. Program reads all of the numbers stored in the file and calculates the numbers stored in the file and calculates their total. The program then calculates the average of all the numbers stored in the file. 
+
+Note: Use the included “hw4.txt” as input file.
+
+When submitting your homework, make sure to submit two files.
+1. MS word file containing design and analysis
+2. Python file 
