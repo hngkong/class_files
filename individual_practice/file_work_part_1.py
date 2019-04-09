@@ -38,9 +38,11 @@ print(file_contents)
 line1 = infile.readline() # reads the first line, as long as the program is still running, will not read the line again
 line2 = infile.readline() # as above, so below
 line3 = infile.readline() # as above, so below
+line4 = infile.readline() # as above, so below
 
 print(line1) # will do nothing based on file_contents above having read everything.  Comment it out if you want it to work
 print(line2)
 print(line3)
+print(line4)
 
 infile.close()
