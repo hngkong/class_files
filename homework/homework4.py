@@ -3,7 +3,7 @@
 # Author: Charles Kline
 # Due Date:
 # Software/Program Reference Number: Homework Assignment 4
-# Software/Program Brief Description: The program should ask for a file name 
+# Software/Program Brief Description: The program should ask for a file name
 #                                     and display the data in the file, before
 #                                     calculating the total of the date, then
 #                                     calculating the average of the data
@@ -14,25 +14,17 @@
 # *********************************************************************************************************
 # Variable Initialization
 
-def main():
+import os
 
+
+def main():
     data_total = 0
     data_average = 0
     total_lines = 0
+    os.getcwd()
 
     # 1. Ask the user for the file name
-<<<<<<< HEAD
-    file_name = input("What is the name of the file you want to use: ")
-
-    # 2. Load the file
-    with open(str(file_name), 'r') as fp:
-        for line_num, data in fp:
-            # 3. Display the contents of the file
-            print("Line {}: {}".format(line_num, data))
-            data_total = data_total + data
-=======
     file_name = str(input("What is the name of the file you want to use:"))
-
 
     # 2. Load the file
     data = open(file_name, 'r')
@@ -43,13 +35,13 @@ def main():
         print("Line {}: {}".format(line, number))
         data_total = data_total + data
         total_lines = line
->>>>>>> 72137ed90a58250a8cf601fcea75d75e54b9e001
 
     # 4. Display the total of all the data
     print("The total sum of the data is:", data_total)
-    
+
     # 5. Display the average of all the data
-    data_average = data_total/total_lines
+    data_average = data_total / total_lines
     print("The average of the data is:", data_average)
-    
+
+
 main()
