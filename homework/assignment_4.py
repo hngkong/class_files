@@ -20,10 +20,10 @@ def main():
     data_average = 0
     line_num = 0
     # 1. Ask the user for the file name
-    file_name = input("What is the name of the file you want to use:")
+    file_name = input("What is the name of the file you want to use: ")
 
     # 2. Load the file
-    with open(file_name) as fp:
+    with open(str(file_name), 'r') as fp:
         for line_num, data in enumerate(fp):
             # 3. Display the contents of the file
             print("Line {}: {}".format(line_num, data))
