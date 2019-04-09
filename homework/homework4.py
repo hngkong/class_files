@@ -21,7 +21,6 @@ def main():
     data_total = 0
     data_average = 0
     total_lines = 0
-    os.getcwd()
 
     # 1. Ask the user for the file name
     file_name = str(input("What is the name of the file you want to use:"))
