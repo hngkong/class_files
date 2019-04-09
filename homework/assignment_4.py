@@ -14,27 +14,28 @@
 # *********************************************************************************************************
 # Variable Initialization
 
-data_total = 0
-data_average = 0
-lines = 0
-
 def main():
+
+    data_total = 0
+    data_average = 0
+    line_num = 0
     # 1. Ask the user for the file name
     file_name = input("What is the name of the file you want to use:")
 
     # 2. Load the file
-    read_file = open(file_name, 'r')
+    with open(file_name) as fp:
+        data = fp.readline()
+        while data:
+            data = fp.readline()
+            line_num = line_num + 1
+            # 3. Display the contents of the file
+            print("Line {}: {}".format(line_num, data))
+            data_total = data_total + data
 
-    # 3. Display the contents of the file
-    file_contents = read_file.read()
-    for line in file_contents
-        lines = lines + 1
-        data = file_contents.readline()
-        print(lines,":", data)
-        data_total = data_total + data
+    # 4. Display the total of all the data
     print("The total sum of the data is:", data_total)
     
-    #
-    data_average = data_total/lines
+    # 5. Display the average of all the data
+    data_average = data_total/line_num
     print("The average of the data is:", data_average)
     
