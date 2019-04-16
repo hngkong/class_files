@@ -22,24 +22,28 @@ def main():
     data_average = 0
     total_lines = 0
 
+    
+
     # 1. Ask the user for the file name
     file_name = str(input("What is the name of the file you want to use:"))
 
-    # 2. Load the file
+    # 2. Load the file and loop it
     data = open(file_name, 'r')
-    # 2.5. Read the data from the file
     for line in data:
         number = float(data)
-        # 3. Display the contents of the file
-        print("Line {}: {}".format(line, number))
+        # 3. Display the line number and data of the line
+        print("Line {}: {}".format(line+1, number))
+        # 4. Determine the total of the data
         data_total = data_total + data
-        total_lines = line
+        total_lines = line + 1
 
-    # 4. Display the total of all the data
+    # 5. Display the total of all the data
     print("The total sum of the data is:", data_total)
 
-    # 5. Display the average of all the data
+    # 6. Determine the average of the data
     data_average = data_total / total_lines
+
+    # 7. Display the average of all the data
     print("The average of the data is:", data_average)
 
 

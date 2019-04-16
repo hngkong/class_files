@@ -21,7 +21,6 @@ def main():
     total_lines = 0
 
     # 1. Ask the user for the file name
-<<<<<<< HEAD
     file_name = input("What is the name of the file you want to use: ")
 
     # 2. Load the file
@@ -30,20 +29,6 @@ def main():
             # 3. Display the contents of the file
             print("Line {}: {}".format(line_num, data))
             data_total = data_total + data
-=======
-    file_name = str(input("What is the name of the file you want to use:"))
-
-
-    # 2. Load the file
-    data = open(file_name, 'r')
-    # 2.5. Read the data from the file
-    for line in data:
-        number = float(data)
-        # 3. Display the contents of the file
-        print("Line {}: {}".format(line, number))
-        data_total = data_total + data
-        total_lines = line
->>>>>>> 72137ed90a58250a8cf601fcea75d75e54b9e001
 
     # 4. Display the total of all the data
     print("The total sum of the data is:", data_total)
