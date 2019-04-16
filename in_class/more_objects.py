@@ -13,19 +13,25 @@
 # Variable Initialization
 
 class Insect:
-
-    def __init__(self):
-        self.fuck_me = "No shit"
-        self.this_sucks = 10
-        print(self.fuck_me)
-
-    def fuckThis(self):
-        self.fuck_me = "This shit sucks"
-        print(self.fuck_me)
+    InsectName = ""
+    InsectWings = False
 
 def main():
-    jack = Insect()
+    HouseFly = Insect()
+    Mosquito = Insect()
+    Ant = Insect()
 
-    jack.fuckThis()
+    HouseFly.InsectName = "House Fly"
+    Mosquito.InsectName = "Mosquito"
+    Ant.InsectName = "Ant"
+    HouseFly.InsectWings = True
+
+    print("The name of the HouseFly object InsectName is:",HouseFly.InsectName)
+    print("A house fly has wings:",HouseFly.InsectWings)
+    print("The name of the Ant object InsectName is:",Ant.InsectName)
+    print("An ant has wings:",Ant.InsectWings)
+    print("The name of the Mosquito object InsectName is:",Mosquito.InsectName)
+    print("A dingo ate my baby:",Mosquito.InsectWings)
+
 
 main()
