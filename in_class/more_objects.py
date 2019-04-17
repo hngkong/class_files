@@ -12,9 +12,7 @@
 # *********************************************************************************************************
 # Variable Initialization
 
-class Insect:
-    InsectName = ""
-    InsectWings = False
+from classfile import Insect
 
 def main():
     HouseFly = Insect()
