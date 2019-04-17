@@ -33,5 +33,4 @@ def main():
     print("The name of the Mosquito object InsectName is:",Mosquito.InsectName)
     print("A dingo ate my baby:",Mosquito.InsectWings)
 
-
 main()
