@@ -48,7 +48,7 @@ def main():
             confirm_bet = input("y/n? ")
             if confirm_bet == 'y':
                 # randomize cards
-                # check win
+                # check win/loss
                 FirstPlayer.cash_available -= FirstPlayer.current_bet
                 print("FirstPlayer.cash_available")
 
